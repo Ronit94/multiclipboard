@@ -1,6 +1,8 @@
 from pathlib import Path
 from pprint import pprint
 import clipboard
+from datetime import datetime
+import time
 
 
 class MultiClipBoard:
@@ -15,9 +17,10 @@ class MultiClipBoard:
             while True:
                 if self.old != clipboard.paste():
                     fb = open(self.file, 'a')
-                    fb.write(clipboard.paste() + '\n')
+                    fb.write(datetime.now().strftime("%d/%m/%Y %H:%M:%S") + ":->" + clipboard.paste() + '\n')
                     self.old = clipboard.paste()
                     fb.close()
+                    time.sleep(0.5)
         except FileNotFoundError as Error:
             pprint(Error)
 

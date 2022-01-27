@@ -1,18 +1,5 @@
-"======================Clipboard tracking started========================="
-self.old = None
-self.file.touch(exist_ok=True)
-self.file = Path('multidata.txt')
-There is one more way to create a file if it does not exist using the touch() method of the
-pathlib module. The path.touch() method creates the file at the specified path.
-from pathlib import Path
-
-fle = Path('data.py')
-fle.touch(exist_ok=True)
-f = open(fle)
-If the file already exists, then it won’t do anything. Otherwise, it will create a new file.
-
-That is it for this tutorial.
-Python file read
-There are many ways you can use to create a file if it does not exist. The most common way is to use the open() function and pass the different modes as per your requirement. Other ways are using the pathlib module or use the os module and check the file’s existing condition. In this tutorial, we will use the open() method approach and the pathlib module’s approach.
-Python create file if not exists.
-To create a file if not exists in Python, use the open() function. The open() is a built-in Python function that opens the file and returns it as a file object. The open() takes the file path and the mode as input and returns the file object as output.
+27/01/2022 21:54:06:->"%d/%m/%Y %H:%M:%S"
+27/01/2022 21:54:11:->Example 3: Get the current date and time
+27/01/2022 21:54:30:->Here, we have used datetime.now() to get the current date and time. Then, we used strftime() to create a string representing date and time in another format.
+27/01/2022 21:54:40:->How to get current date and time in Python?
+27/01/2022 21:54:50:->Python Get Current time - Programiz
